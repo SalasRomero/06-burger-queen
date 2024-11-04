@@ -1,3 +1,7 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app *ngIf="load">
+  <!-- {{'label.app' | translate}} -->
+   <shared-toolbar></shared-toolbar>
+  <ion-router-outlet id="content"></ion-router-outlet>
+
+  <shared-footer></shared-footer>
 </ion-app>
